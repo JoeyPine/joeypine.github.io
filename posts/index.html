@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://joeypine.github.io/posts/" />
-<meta property="og:updated_time" content="2020-04-11T21:53:02+08:00" />
+<meta property="og:updated_time" content="2020-04-11T22:16:11+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -96,27 +96,23 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="https://joeypine.github.io/posts/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%B8%A6%E5%9B%BE%E7%89%87%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="link black dim">
-        第三篇带图片的博客
+      <a href="https://joeypine.github.io/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
+        如何用Hugo搭建个人博客
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      第三篇，测试下带图片的 看看带图的怎么展示 
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://joeypine.github.io/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="link black dim">
-        第二篇博客
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      这是我的第二篇 测试一下第二次部署
+      我也是第一次成功使用Hugo搭建博客站并托管到Github，把完整使用Hugo搭建博客的过程分享一下。
+了解一下Hugo：  Hugo，译为雨果，目前世界上最快的博客生成器，以Go语言实现的静态网站的生成器。
+ Hugo（For Mac） 安装hugo，打开终端，输入：
+brew install hugo  安装完成后，输入命令查看是否安装成功：
+hugo version  使用Hugo生成站点  可以查看官方文档，☞官方教程 也可以看我的步骤。  1.找到一个目录，创建一个新的site，名为xxx.github.io-creator： hugo new site xxx.github.io-creator  xxx是你Github的名字，成功后会在当前目录下生成一个名为xxx.github.io-creator的目录
+2.初始化site，并指定默认主题（可以改，首次最好使用默认主题） cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后将主题添加到配置文件：
+echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  3.添加内容 在posts目录下创建一个名为xxx的MarkDown文件
+hugo new posts/xxx.md
+文件里默认存在以下内容
+--- title: &quot;xxx&quot; date: 2019-03-26T08:47:11+01:00 draft: true --- 添加自己的内容后，将draft修改为flase发布才能正常显示，draft是草稿
+4.启动Hugo服务 hugo server -D
+ | EN +------------------+----+ Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 3 Processed images | 0 Aliases | 1 Sitemaps | 1 Cleaned | 0 Total in 11 ms Watching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes} Watching for config changes in /Users/bep/quickstart/config.
     </div>
   </div>
 </div>
