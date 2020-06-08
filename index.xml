@@ -6,10 +6,34 @@
     <description>Recent content on Song的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 26 Apr 2020 21:50:21 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 20:17:47 +0800</lastBuildDate>
     
 	<atom:link href="https://joeypine.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>https://joeypine.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Mon, 08 Jun 2020 20:17:47 +0800</pubDate>
+      
+      <guid>https://joeypine.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>一、a 标签的用法   定义：定义超链接，从一个页面跳向另一个页面
+  常用的属性：
+a. href：规定跳转指向的 URL
+b. target：设置跳转方式
+c. dowload：规定被下载的目标
+d. rel=noopener：防止 JS 中 window.opener 引发 的安全问题
+  作用：
+    跳转到外部网址
+1.https 协议地址，例如https://www.baidu.com
+2.http 协议地址，例如http://www.baidu.com
+3.不加协议，会自动选择适用协议，例如 //www.baidu.com
+  跳转到内部锚点的路径
+1.绝对路径，例如 /a/b/c，/a 即开启 http 服务的根目录；相对路径a/b/c，相对当前目录
+2.指向某个文件：例如 index.html , ./index.html
+    跳转到邮箱或电话等伪协议
+ javascript 代码，例如  **&amp;lt;a href=&amp;quot;javascript: ; &amp;quot;&amp;gt;js&amp;lt;/a&amp;gt;** id：#xxx；跳转到对应的 id 选择器 mailto：邮箱；  &amp;lt;a href=&amp;quot;mailto:111@qq.com&amp;quot;&amp;gt;发邮箱&amp;lt;/a&amp;gt; tel：手机号  &amp;lt; a href=&amp;quot;tel: 111111&amp;quot;&amp;gt;发邮箱&amp;lt;/a&amp;gt;   target   内置名字  _blank：在新页面打开</description>
+    </item>
     
     <item>
       <title>多线程带来的问题？</title>
