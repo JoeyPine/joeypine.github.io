@@ -27,24 +27,51 @@
     
     <meta property="og:title" content="浅析URL" />
 <meta property="og:description" content="URL 包含哪些部分 协议 &#43; 域名或 IP &#43; 端口号 &#43; 路径 &#43; 查询字符串 &#43; 锚点
- 协议：HTTP/HTTPS 域名或 IP：域名是 IP 的别称，可以通过 ping 某个域名来得到该域名对应的 IP 地址 端口号:一台主体可以提供多个服务,每个服务对应一个端口号 路径:即访问的哪个页面 查询字符串:该页面显示的条件 锚点:页面中有 id 的元素可用#xx 定位到该元素  DNS  DNS：Domain Name System，即域名服务协议，起作用就是将域名和 IP 进行转换 查看一个域名的 IP：使用 nslookup xxx 来查看   IP  IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP 查看本地主机与目标主机网络是否通畅：使用 Ping 命令   域名  域名是什么？ 域名，DomainName，由于 IP 不方便记忆，所以出现了域名，并由 DNS 域名服务将域名和 IP 对应起来，让人们方便的访问互联网中 域名的分类  (1) 顶级域名：" />
+ 协议：HTTP/HTTPS 域名或 IP：域名是 IP 的别称，可以通过 ping 某个域名来得到该域名对应的 IP 地址 端口号:一台主体可以提供多个服务,每个服务对应一个端口号 路径:即访问的哪个页面 查询字符串:该页面显示的条件 锚点:页面中有 id 的元素可用#xx 定位到该元素  IP   IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP
+  IP 可以做什么：
+（1）定位一台设备
+（2）封装数据报文，以跟其他设备交流
+  特殊的 IP
+（1）127.0.0.1 表示自己
+（2）localhost 通过 hosts 指定为自己
+（3）0.0.0.0 不表示任何设备
+  查看本地主机与目标主机网络是否通畅：使用 Ping 命令   端口   端口：一台机器可以提供多种服务，每个服务如果是一个号码，那这个号码就叫作端口
+  常用端口：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://joeypine.github.io/posts/%E6%B5%85%E6%9E%90url/" />
 <meta property="article:published_time" content="2020-06-10T21:19:35+08:00" />
 <meta property="article:modified_time" content="2020-06-10T21:19:35+08:00" />
 <meta itemprop="name" content="浅析URL">
 <meta itemprop="description" content="URL 包含哪些部分 协议 &#43; 域名或 IP &#43; 端口号 &#43; 路径 &#43; 查询字符串 &#43; 锚点
- 协议：HTTP/HTTPS 域名或 IP：域名是 IP 的别称，可以通过 ping 某个域名来得到该域名对应的 IP 地址 端口号:一台主体可以提供多个服务,每个服务对应一个端口号 路径:即访问的哪个页面 查询字符串:该页面显示的条件 锚点:页面中有 id 的元素可用#xx 定位到该元素  DNS  DNS：Domain Name System，即域名服务协议，起作用就是将域名和 IP 进行转换 查看一个域名的 IP：使用 nslookup xxx 来查看   IP  IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP 查看本地主机与目标主机网络是否通畅：使用 Ping 命令   域名  域名是什么？ 域名，DomainName，由于 IP 不方便记忆，所以出现了域名，并由 DNS 域名服务将域名和 IP 对应起来，让人们方便的访问互联网中 域名的分类  (1) 顶级域名：">
+ 协议：HTTP/HTTPS 域名或 IP：域名是 IP 的别称，可以通过 ping 某个域名来得到该域名对应的 IP 地址 端口号:一台主体可以提供多个服务,每个服务对应一个端口号 路径:即访问的哪个页面 查询字符串:该页面显示的条件 锚点:页面中有 id 的元素可用#xx 定位到该元素  IP   IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP
+  IP 可以做什么：
+（1）定位一台设备
+（2）封装数据报文，以跟其他设备交流
+  特殊的 IP
+（1）127.0.0.1 表示自己
+（2）localhost 通过 hosts 指定为自己
+（3）0.0.0.0 不表示任何设备
+  查看本地主机与目标主机网络是否通畅：使用 Ping 命令   端口   端口：一台机器可以提供多种服务，每个服务如果是一个号码，那这个号码就叫作端口
+  常用端口：">
 <meta itemprop="datePublished" content="2020-06-10T21:19:35&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-10T21:19:35&#43;08:00" />
-<meta itemprop="wordCount" content="101">
+<meta itemprop="wordCount" content="155">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="浅析URL"/>
 <meta name="twitter:description" content="URL 包含哪些部分 协议 &#43; 域名或 IP &#43; 端口号 &#43; 路径 &#43; 查询字符串 &#43; 锚点
- 协议：HTTP/HTTPS 域名或 IP：域名是 IP 的别称，可以通过 ping 某个域名来得到该域名对应的 IP 地址 端口号:一台主体可以提供多个服务,每个服务对应一个端口号 路径:即访问的哪个页面 查询字符串:该页面显示的条件 锚点:页面中有 id 的元素可用#xx 定位到该元素  DNS  DNS：Domain Name System，即域名服务协议，起作用就是将域名和 IP 进行转换 查看一个域名的 IP：使用 nslookup xxx 来查看   IP  IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP 查看本地主机与目标主机网络是否通畅：使用 Ping 命令   域名  域名是什么？ 域名，DomainName，由于 IP 不方便记忆，所以出现了域名，并由 DNS 域名服务将域名和 IP 对应起来，让人们方便的访问互联网中 域名的分类  (1) 顶级域名："/>
+ 协议：HTTP/HTTPS 域名或 IP：域名是 IP 的别称，可以通过 ping 某个域名来得到该域名对应的 IP 地址 端口号:一台主体可以提供多个服务,每个服务对应一个端口号 路径:即访问的哪个页面 查询字符串:该页面显示的条件 锚点:页面中有 id 的元素可用#xx 定位到该元素  IP   IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP
+  IP 可以做什么：
+（1）定位一台设备
+（2）封装数据报文，以跟其他设备交流
+  特殊的 IP
+（1）127.0.0.1 表示自己
+（2）localhost 通过 hosts 指定为自己
+（3）0.0.0.0 不表示任何设备
+  查看本地主机与目标主机网络是否通畅：使用 Ping 命令   端口   端口：一台机器可以提供多种服务，每个服务如果是一个号码，那这个号码就叫作端口
+  常用端口："/>
 
   </head>
 
@@ -145,17 +172,55 @@
 <li>查询字符串:该页面显示的条件</li>
 <li>锚点:页面中有 id 的元素可用#xx 定位到该元素</li>
 </ol>
+<h2 id="ip">IP</h2>
+<ol>
+<li>
+<p>IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP</p>
+</li>
+<li>
+<p>IP 可以做什么：</p>
+<p>（1）定位一台设备</p>
+<p>（2）封装数据报文，以跟其他设备交流</p>
+</li>
+<li>
+<p>特殊的 IP</p>
+<p>（1）127.0.0.1 表示自己</p>
+<p>（2）localhost 通过 hosts 指定为自己</p>
+<p>（3）0.0.0.0 不表示任何设备</p>
+</li>
+<li>
+<p>查看本地主机与目标主机网络是否通畅：使用 Ping 命令
+<img src="/images/ping.png" alt=""></p>
+</li>
+</ol>
+<h2 id="端口">端口</h2>
+<ol>
+<li>
+<p>端口：一台机器可以提供多种服务，每个服务如果是一个号码，那这个号码就叫作端口</p>
+</li>
+<li>
+<p>常用端口：</p>
+<p>（1）要提供 HTTP 服务最好使用 80 端口</p>
+<p>（2）要提供 HTTPS 服务最好使用 443 端口</p>
+<p>（3）要提供 FTP 服务最好使用 21 端口</p>
+<p>（4）一共有 65535 个端口（基本够用）</p>
+</li>
+</ol>
+<ol start="3">
+<li>
+<p>使用规则：</p>
+<p>（1）0 到 1023 （2 的 10 次方减 1）号端口是留给系统使用的</p>
+<p>（2）你只有拥有了管理员权限后，才能使用这 1024 个端口</p>
+<p>（3）其他端口可以给普通用户使用</p>
+<p>（4）比如 http-server 默认使用 8080 端口</p>
+<p>（5）—个端口如果被占用，就换一个端口</p>
+</li>
+</ol>
 <h2 id="dns">DNS</h2>
 <ol>
 <li>DNS：Domain Name System，即域名服务协议，起作用就是将域名和 IP 进行转换</li>
 <li>查看一个域名的 IP：使用 nslookup xxx 来查看
 <img src="/images/nslookup.png" alt=""></li>
-</ol>
-<h2 id="ip">IP</h2>
-<ol>
-<li>IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP</li>
-<li>查看本地主机与目标主机网络是否通畅：使用 Ping 命令
-<img src="/images/ping.png" alt=""></li>
 </ol>
 <h2 id="域名">域名</h2>
 <ol>
