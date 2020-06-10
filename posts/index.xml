@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Song的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 08 Jun 2020 20:17:47 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 21:19:35 +0800</lastBuildDate>
     
 	<atom:link href="https://joeypine.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析URL</title>
+      <link>https://joeypine.github.io/posts/%E6%B5%85%E6%9E%90url/</link>
+      <pubDate>Wed, 10 Jun 2020 21:19:35 +0800</pubDate>
+      
+      <guid>https://joeypine.github.io/posts/%E6%B5%85%E6%9E%90url/</guid>
+      <description>URL 包含哪些部分 协议 + 域名或 IP + 端口号 + 路径 + 查询字符串 + 锚点
+ 协议：HTTP/HTTPS 域名或 IP：域名是 IP 的别称，可以通过 ping 某个域名来得到该域名对应的 IP 地址 端口号:一台主体可以提供多个服务,每个服务对应一个端口号 路径:即访问的哪个页面 查询字符串:该页面显示的条件 锚点:页面中有 id 的元素可用#xx 定位到该元素  DNS  DNS：Domain Name System，即域名服务协议，起作用就是将域名和 IP 进行转换 查看一个域名的 IP：使用 nslookup xxx 来查看   IP  IP：Internet Protocol，即网际互连协议,IP 是互联网的基础，每个连接互联网的终端设备至少都有一个 IP 查看本地主机与目标主机网络是否通畅：使用 Ping 命令   域名  域名是什么？ 域名，DomainName，由于 IP 不方便记忆，所以出现了域名，并由 DNS 域名服务将域名和 IP 对应起来，让人们方便的访问互联网中 域名的分类  (1) 顶级域名：</description>
+    </item>
     
     <item>
       <title>HTML常用标签</title>
